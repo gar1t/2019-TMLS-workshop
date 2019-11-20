@@ -29,7 +29,7 @@
 - Minimize context
 - Minimize side-effects
 
-## Notes
+## Notes - General
 
 - Understand the nature of a language and don't work against
   it. E.g. Python is not a strong typed language. Even type hints

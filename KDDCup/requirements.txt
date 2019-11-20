@@ -1,4 +1,6 @@
 h2o
 jupyterlab
+matplotlib
 pandas
+pylint
 sklearn
