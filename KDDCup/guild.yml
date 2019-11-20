@@ -1,0 +1,30 @@
+kdd:
+  main: kdd_classifier
+  default: yes
+  description: Train a KDD classifier
+  requires:
+    - file: ${data}
+      name: data
+  flags-import:
+    - data
+    - test_split
+    - random_seed
+    - model
+  flags:
+    model:
+      choices: [nb, tree, svm, forest]
+  output-scalars:
+    accuracy: 'Accuracy: (\value)'
+    precision: 'Precision: (\value)'
+    recall: 'Recall: (\value)'
+    f1: 'F-1: (\value)'
+  sourcecode:
+    - '*.py'
+    - '*.yml'
+
+all:
+  description: Train classifiers with all models
+  sourcecode: no
+  steps:
+    - kdd model=nb
+    - kdd model=tree

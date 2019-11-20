@@ -1,8 +1,6 @@
 # Clean Coding for ML Workshop
 
-Use Notebook example and refactor to scripts.
-
-Topics to cover:
+## Topics to Discuss
 
 - Naming conventions
 - Notebooks
@@ -24,22 +22,38 @@ Topics to cover:
   - Find apply
   - Objects as struct / no methods
 
-Agenda:
-
-- Introduction
-  - About me, why qualified
-  - Agenda
-- Principles (20 - 30 min)
-- Refactoring example
-  - Notebook code
-  - Factor to script with automation
-  - Add linter
-  - Tests
-- Open for group refactoring - live exercise
-
-Prime principles:
+## Some Principles
 
 - Be intentional
 - Strive for algorithmic clarity
 - Minimize context
 - Minimize side-effects
+
+## Notes
+
+- Understand the nature of a language and don't work against
+  it. E.g. Python is not a strong typed language. Even type hints
+  don't make the language strongly typed. Python is not a pure
+  language. Python is not a functional language, entirely. Object
+  methods are common in the core API. Don't write code that looks
+  different from other code in that language. Unless that language is
+  Java.
+
+- Variable and argument names are easier in smaller functions. The
+  function provides context.
+
+- A good metric for when you're "done" with a function is its
+  length. Except in data science, where building plots can be a
+  lengthy process. These cases make function length harder to use as a
+  single metric. In general, one function per plot or transform.
+
+- Functions name blocks of code and isolate their interface. You'd be
+  surprised at a) how hard it is at times to name a function and b)
+  how hard it is to find the right boundary of inputs and
+  outputs. This is all excellent pain to experience because it's the
+  process of understanding what you're doing and codifying that for
+  yourself and others to see and use later.
+
+- Tests are over rated. Don't feel bad for not having 100% test
+  coverage. If your program needs 100% test coverage, don't use
+  Python.
