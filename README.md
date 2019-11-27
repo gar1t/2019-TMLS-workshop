@@ -57,3 +57,11 @@
 - Tests are over rated. Don't feel bad for not having 100% test
   coverage. If your program needs 100% test coverage, don't use
   Python.
+
+## Followup
+
+To continue the workshop discussion, we started a Slack workspace.
+
+Here's the sign up link - open to all!
+
+[http://bit.ly/ml-engineering-slack](http://bit.ly/ml-engineering-slack)
