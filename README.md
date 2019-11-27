@@ -58,7 +58,7 @@
   coverage. If your program needs 100% test coverage, don't use
   Python.
 
-## Followup
+## Continue Discussion on Slack
 
 To continue the workshop discussion, we started a Slack workspace.
 
