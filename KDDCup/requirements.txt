@@ -1,6 +1,8 @@
 h2o
+ipywidgets
 jupyterlab
 matplotlib
 pandas
 pylint
 sklearn
+tqdm

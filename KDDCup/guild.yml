@@ -28,3 +28,4 @@ all:
   steps:
     - kdd model=nb
     - kdd model=tree
+    - kdd model=forest
